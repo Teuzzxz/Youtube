@@ -1,0 +1,87 @@
+@font-face {
+    font-family: Font;
+    src: url(mídias/LEMONMILK-Light.otf);
+}
+@media (min-width: 801px){
+    li {
+        opacity: 100% !important;
+        transition: none !important;
+    }
+    .otlado {
+        display: block;
+        position: relative;
+        transform: translate(0% , 0%) !important;
+    }
+    ul {
+        flex-direction: row !important;
+    }
+}
+@media (max-width: 800px){
+    .otlado {
+        position: absolute;
+        top: 7vh;
+        left: 100%;
+        background-color: rgb(10, 0, 10);
+        width: 350px;
+        height: 93vh;
+        opacity: 20%;
+        transition: 0.8s;
+    }
+    ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: end;
+    } 
+    li {
+        margin:0px !important;
+        width: 80px;
+        text-align: center;
+        opacity: 10%;
+        transition: 2s;
+    }
+    .line {
+        display: block !important;
+    }
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font: normal 0.8em Font;
+    overflow: hidden;
+}
+main {
+    background: url(mídias/Background.jpg);
+    height: 93vh;
+    width: 100%;
+    background-size: cover;
+}
+header {
+    background-color:rgb(10, 0, 10);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 7vh;
+}
+li {
+    display: inline;
+    margin-right: 30px;
+    cursor: pointer;
+    
+}
+.line {
+    height: 3px;
+    width: 23px;
+    background-color: white;
+    margin-top: 3px;
+    border-radius: 50px;
+    display: none;
+    transition: 1s;
+}
+.sumir {
+    display: none !important;
+}
