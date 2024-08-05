@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="containerPai">
+			<div class="Filho">
+				<div id="d1" class="Filhos"></div>
+				<div id="d2" class="Filhos"></div>
+			</div>
+			<div class="Filho">
+				<div id="d3" class="Filhos"></div>
+				<div id="d4" class="Filhos"></div>
+			</div>
+			<div class="Filho">
+				<div id="d5" class="Filhos"></div>
+				<div id="d6" class="Filhos"></div>
+			</div>
+		</div>
+		<script>
+			let tudo = document.getElementsByClassName("containerPai")[0]
+			window.addEventListener("keydown", (evt) => {
+				if (evt.key == "a") {
+					tudo.style.width = "700px"
+				} else if (evt.key == "s") {
+					tudo.style.width = "1000px"
+				} else if (evt.key == "d") {
+					tudo.style.width = "1400px"
+				} else if (evt.key == "x") {
+					tudo.style.height = "700px"
+				} else if (evt.key == "c") {
+					tudo.style.height = "900px"
+				}
+			})
+		</script>
+	</body>
+</html>

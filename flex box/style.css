@@ -1,0 +1,48 @@
+body {
+	background-color: rgb(80, 80, 80);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	overflow: hidden;
+}
+div {
+	border-radius: 20px;
+}
+
+.containerPai {
+	width: 1200px;
+	height: 700px;
+	background-color: white;
+	flex-direction: column;
+	transition: all 2s;
+}
+.Filho {
+	height: 28.5%;
+	display: flex;
+	margin-top: 20px;
+}
+.Filhos {
+	height: 100%;
+	background-color: purple;
+	margin: 20px;
+}
+
+#d1 {
+	width: 20%;
+}
+#d2 {
+	width: 80%;
+}
+#d3 {
+	width: 50%;
+}
+#d4 {
+	width: 50%;
+}
+#d5 {
+	width: 30%;
+}
+#d6 {
+	width: 70%;
+}
