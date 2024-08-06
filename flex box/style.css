@@ -11,38 +11,24 @@ div {
 }
 
 .containerPai {
-	width: 1200px;
+	width: 1000px;
 	height: 700px;
-	background-color: white;
+	background-color: black;
+	display: flex;
+	flex-direction: row;
 	flex-direction: column;
+	flex-direction: row-reverse;
+	flex-direction: column-reverse;
 	transition: all 2s;
 }
-.Filho {
-	height: 28.5%;
-	display: flex;
-	margin-top: 20px;
-}
-.Filhos {
-	height: 100%;
-	background-color: purple;
-	margin: 20px;
-}
-
-#d1 {
+.filho {
 	width: 20%;
-}
-#d2 {
-	width: 80%;
-}
-#d3 {
-	width: 50%;
-}
-#d4 {
-	width: 50%;
-}
-#d5 {
-	width: 30%;
-}
-#d6 {
-	width: 70%;
+	height: 20%;
+	background-color: purple;
+	margin: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font: normal 2em arial;
+	color: white;
 }
