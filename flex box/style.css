@@ -15,11 +15,10 @@ div {
 	height: 700px;
 	background-color: black;
 	display: flex;
-	flex-direction: row;
 	flex-direction: column;
-	flex-direction: row-reverse;
-	flex-direction: column-reverse;
 	transition: all 2s;
+	justify-content: center;
+	align-items: end;
 }
 .filho {
 	width: 20%;
