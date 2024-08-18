@@ -10,18 +10,21 @@
 			<div class="filho">1</div>
 			<div class="filho">2</div>
 			<div class="filho">3</div>
+			<div class="filho">4</div>
+			<div class="filho">5</div>
+			<div class="filho c6">6</div>
 		</div>
 		<script>
 			let tudo = document.getElementsByClassName("containerPai")[0]
 			window.addEventListener("keydown", (evt) => {
 				if (evt.key == "a") {
-					tudo.style.flexDirection = "column"
+					tudo.style.flexWrap = "wrap"
 				} else if (evt.key == "s") {
-					tudo.style.flexDirection = "row"
-				} else if (evt.key == "d") {
-					tudo.style.flexDirection = "column-reverse"
-				} else if (evt.key == "f") {
-					tudo.style.flexDirection = "row-reverse"
+					tudo.style.flexWrap = "nowrap"
+				} else if (evt.key == "z") {
+					tudo.style.width = "1520px"
+				} else if (evt.key == "x") {
+					tudo.style.width = "800px"
 				}
 			})
 		</script>

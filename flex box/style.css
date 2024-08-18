@@ -12,17 +12,15 @@ div {
 
 .containerPai {
 	width: 1000px;
-	height: 700px;
 	background-color: black;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	transition: all 2s;
-	justify-content: center;
-	align-items: end;
 }
 .filho {
-	width: 20%;
-	height: 20%;
+	flex-grow: 1;
+	height: 100px;
+	flex-shrink: 10px;
 	background-color: purple;
 	margin: 16px;
 	display: flex;
