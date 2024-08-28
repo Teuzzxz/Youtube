@@ -1,0 +1,45 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: black;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+.caixa {
+	background-color: white;
+	width: 200px;
+	height: 200px;
+}
+@property --angulo {
+	syntax: "<angle>";
+	initial-value: 0deg;
+	inherits: false;
+}
+.caixa::after,
+.caixa::before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 215px;
+	height: 215px;
+	background-image: conic-gradient(from var(--angulo), transparent, blue);
+	translate: -7px -7px;
+	z-index: -1;
+	animation: bordaAnimada 4s linear infinite;
+}
+.caixa::before {
+	filter: blur(8px);
+}
+
+@keyframes bordaAnimada {
+	0% {
+		--angulo: 0deg;
+	}
+	100% {
+		--angulo: 360deg;
+	}
+}
