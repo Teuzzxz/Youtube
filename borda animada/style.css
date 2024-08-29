@@ -9,15 +9,11 @@ body {
 	justify-content: center;
 	align-items: center;
 }
+
 .caixa {
 	background-color: white;
 	width: 200px;
 	height: 200px;
-}
-@property --angulo {
-	syntax: "<angle>";
-	initial-value: 0deg;
-	inherits: false;
 }
 .caixa::after,
 .caixa::before {
@@ -26,20 +22,27 @@ body {
 	position: absolute;
 	width: 215px;
 	height: 215px;
-	background-image: conic-gradient(from var(--angulo), transparent, blue);
 	translate: -7px -7px;
 	z-index: -1;
-	animation: bordaAnimada 4s linear infinite;
-}
-.caixa::before {
-	filter: blur(8px);
+	background-image: conic-gradient(from var(--angulo), transparent, blue);
+	animation: Borda 3s infinite linear;
 }
 
-@keyframes bordaAnimada {
-	0% {
+.caixa::before {
+	filter: blur(50px);
+}
+
+@property --angulo {
+	syntax: "<angle>";
+	initial-value: 0deg;
+	inherits: false;
+}
+
+@keyframes Borda {
+	from {
 		--angulo: 0deg;
 	}
-	100% {
+	to {
 		--angulo: 360deg;
 	}
 }
