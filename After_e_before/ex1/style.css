@@ -1,0 +1,40 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-image: url(img_background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font: bold 1em arial;
+}
+header {
+	height: 50px;
+	background-color: aqua;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	& h1 {
+		font-weight: bolder;
+	}
+	& li {
+		display: flex;
+		flex-direction: row;
+		& ul {
+			margin-right: 30px;
+			cursor: default;
+		}
+	}
+	& li ul::after {
+		content: "";
+		display: block;
+		position: absolute;
+		height: 2px;
+		width: 0px;
+		background-color: black;
+		transition: all 1s;
+	}
+	& li ul:hover::after {
+		width: 50px;
+	}
+}
