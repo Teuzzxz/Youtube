@@ -3,14 +3,16 @@
 	padding: 0px;
 }
 body {
-	background-image: url(img_background.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 	font: bold 1em arial;
 }
 header {
 	height: 50px;
-	background-color: aqua;
+	background-color: white;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -21,7 +23,7 @@ header {
 		display: flex;
 		flex-direction: row;
 		& ul {
-			margin-right: 30px;
+			margin: 30px;
 			cursor: default;
 		}
 	}
