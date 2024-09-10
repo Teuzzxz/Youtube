@@ -16,16 +16,32 @@
 				justify-content: center;
 				align-items: center;
 				height: 100vh;
+				flex-direction: column;
 			}
 			.container {
 				width: 200px;
 				height: 200px;
 				background-color: white;
-				transform: matrix(1, 0, 0, 1, 50, 100);
+			}
+			input {
+				margin-top: 50px;
+				width: 400px;
+				height: 30px;
+				color: black;
+				background-color: grey;
+				font-size: 1.5em;
 			}
 		</style>
 	</head>
 	<body>
 		<div class="container"></div>
+		<input type="text" />
+		<script>
+			let ipt = document.getElementsByTagName("input")[0]
+			let caixa = document.getElementsByClassName("container")[0]
+			ipt.addEventListener("change", (e) => {
+				caixa.setAttribute("style", `${e.target.value}`)
+			})
+		</script>
 	</body>
 </html>
